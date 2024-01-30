@@ -1,0 +1,72 @@
+.home{
+    align-items: center;
+    justify-content: center;
+    position: relative;
+   
+}
+h1{
+    color: black;
+}
+.img__home{
+    height: 100% ;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    width: max-content;
+}
+.landing__container{
+    display: flex;
+    height: 95vh;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+}
+.nosotros{
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url(../../assets/img/nosotros.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.nosotros h3{
+    font-size: 40px;
+    text-shadow: 2px 2px 2px black;
+    color: #FFFFFF;
+    border-bottom: 5px solid;
+    padding-bottom: 20px;
+}
+.nosotros p{
+    backdrop-filter: blur(10px);
+    padding-left: 600px;
+    padding-right: 600px;
+    font-size: 20px;
+    color: #FFFFFF;
+    font-weight: 100;
+}
+.home hr{
+    border-color: #10002B;
+    border-width: 5px;
+    width: 100px;
+}
+.home h2{
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 80;
+    left: 300px;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+.home h2 span{
+    background-color: #FFDB48 ;
+    text-shadow: 2px 2px 2px black;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    box-shadow: 2px 2px 2px black;
+    
+}
