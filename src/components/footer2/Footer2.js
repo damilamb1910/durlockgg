@@ -29,19 +29,19 @@ const Footer2 = () => {
 <div className='formulario__container'>
     <h4>¡Contactanos!</h4>
     <hr />
-<Form > 
+<Form data-netlify="true" name="contact" method="POST" > 
 <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Nombre</Form.Label>
-        <Form.Control  type="text" placeholder="Escriba aquí su nombre..." />
+        <Form.Control name="name" type="text" placeholder="Escriba aquí su nombre..." />
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Email</Form.Label>
-        <Form.Control  type="email" placeholder="Escriba aquí su email..." />
+        <Form.Control name="email" type="email" placeholder="Escriba aquí su email..." />
       </Form.Group>
       <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1" >
         <Form.Label>Mensaje</Form.Label>
-        <Form.Control  as="textarea" rows={3} placeholder="Escriba aquí su mensaje..." />
+        <Form.Control name="message"  as="textarea" rows={3} placeholder="Escriba aquí su mensaje..." />
       </Form.Group>
       <Button variant="primary" type="submit">
         Enviar
