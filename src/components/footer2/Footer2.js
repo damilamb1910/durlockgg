@@ -29,7 +29,7 @@ const Footer2 = () => {
 <div className='formulario__container'>
     <h4>¡Contactanos!</h4>
     <hr />
-<Form data-netlify="true" name="contact" method="POST" > 
+<Form data-netlify="true" name="contact" method="POST" action="/" > 
 <input type="hidden" name="form-name" value="contact" />
 <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Nombre</Form.Label>
