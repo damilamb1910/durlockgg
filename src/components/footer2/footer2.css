@@ -31,8 +31,6 @@ footer{
     width: 70%;
     margin-bottom: 50px;
     flex-wrap: wrap;
-    
-    
 }
 
 
@@ -42,6 +40,8 @@ footer h4{
 }
 .formulario__container{
     width: 400px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .formulario__container hr{
     border-color: #10002B;
@@ -54,26 +54,19 @@ display: flex;
 flex-direction: row;
 justify-content: space-evenly;
 margin-top: 50px;
+flex-wrap: wrap;
+}
+
+.mapa__container{
+    width: 600px;
 }
 @media only screen and  (max-width:600px) {
-        .hablame{
-            flex-direction: column;
-            padding: 40px;
-            padding-top: 50px;
-            width: 95%;
-            
-            
-        }
-        .hablame button{
-            margin-top: 30px;
-        }
-        .hablame p{
-            margin-top: 30px;
-            text-align: center;
-        }
         footer h3{
             width: 80%;
             margin-top: 30px;
             text-align: center;
+        }
+        .mapa__container{
+            width: 400px;
         }
 }

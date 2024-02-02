@@ -14,7 +14,8 @@ a{
 .menu-boton{
     display: none;
     margin-right: 1em;
-    color: #8448D8;
+    color: black;
+    background-color: #FFDB48;
    
   }
   .nav__ul{
@@ -110,7 +111,7 @@ box-shadow: inset 20px 20px 60px #0d0d0d,
       header{
         position: fixed;
       z-index: 9999;
-      background-color: #1D1D1D;
+      background-color: black;
       }
     .header__nav{
         width: 100%;

@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const Footer2 = () => {
     
         const mapStyle = {
-          width: '400px',
+          width: '100%',
           height: '600px',
           border: '0',
         };

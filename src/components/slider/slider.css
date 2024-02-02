@@ -21,7 +21,7 @@
 .slider{
     height: auto;
     margin: auto;
-    width: 75vw;
+    width: 80vw;
     overflow: hidden;
     background-color: white;
 }
@@ -34,6 +34,17 @@
     100%{
         -webkit-transform:translateX(calc(-300px * 5));
         transform:translateX(calc(-300px * 5))
+    }
+    
+}
+
+@media only screen and  (max-width:600px) {
+    
+    .slider{
+        
+        width: 95vw;
+        
+        
     }
     
 }
