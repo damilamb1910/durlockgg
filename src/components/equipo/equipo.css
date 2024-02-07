@@ -1,0 +1,29 @@
+.equipo__card img{
+    width: 400px;
+    margin-bottom: 1vw;
+}
+.equipo__card{
+    width: 400px;
+}
+
+.equipo{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.equipo h3{
+    color: white;
+    margin-top: 4vw;
+}
+
+.equipo__card__container{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 4vw;
+    margin-bottom: 4vh;
+    flex-wrap: wrap;
+}
