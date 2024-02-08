@@ -6,6 +6,10 @@
     width: 400px;
 }
 
+.equipo__card{
+    color: aliceblue;
+}
+
 .equipo{
     background-color: black;
     display: flex;

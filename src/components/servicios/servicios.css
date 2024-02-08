@@ -1,0 +1,32 @@
+.servicios__card img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+.servicios__container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.servicios__container h3{
+    text-align: center;
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+}
+.servicios__card__container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.servicios__card{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    
+}
+.servicios__card h4{
+    margin-top: 1vw;
+    text-align: center;
+    
+}
+

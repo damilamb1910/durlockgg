@@ -4,6 +4,7 @@ import img_home from '../../assets/img/img-home-min.jpg'
 import Marcas from '../marcas/Marcas'
 import Equipo from '../equipo/Equipo'
 import Loading from '../Loading/Loading'
+import Servicios from '../servicios/Servicios'
 
 const Home = () => {
   const [loading,setLoading]=useState(true)
@@ -29,7 +30,9 @@ const Home = () => {
         <p>En Durlock GG, nos enorgullece presentarnos como una empresa contratista líder, especializada en construcción en seco y proyectos generales, comprometida con la responsabilidad, la calidad y el uso de personal altamente calificado. Desde nuestro inicio, nos hemos destacado por ofrecer soluciones innovadoras que transforman espacios con eficiencia y precisión.</p>
       </div>
       <Equipo/>
+      <Servicios/>
       <Marcas/>
+      
      
     </div>
   )
