@@ -14,8 +14,8 @@ a{
 .menu-boton{
     display: none;
     margin-right: 1em;
-    color: black;
-    background-color: #FFDB48;
+    color: #FFDB48;
+    background-color: #000000;
    
   }
   .nav__ul{
@@ -107,6 +107,9 @@ box-shadow: inset 20px 20px 60px #0d0d0d,
  @media only screen and  (max-width:600px) {
     .menu-boton{
         display:flex;
+        border: none;
+justify-content: center;
+align-items: center;        
       }
       header{
         position: fixed;
@@ -114,7 +117,8 @@ box-shadow: inset 20px 20px 60px #0d0d0d,
       background-color: black;
       }
     .header__nav{
-        width: 100%;
+        width: 50%;
+        
       display: flex;
       flex-flow: column nowrap;
       justify-content: center;
@@ -124,18 +128,21 @@ box-shadow: inset 20px 20px 60px #0d0d0d,
       opacity: 0;
       transition: all .5s ease;
       background-color: #1D1D1D;
-     
-      
+      right: 0px;
+      top: 10px;
+      position: absolute;
       
       
       
     }
     .header__nav.isActive{
       font-size: 18px;
-        height: 90vh;
+      height: 40vh;
         opacity: 1;
-        position: relative;
-      z-index: 9999;
+        position: absolute;
+        right: 0px;
+        top: 115px;
+      z-index: 999;
 
         
       }

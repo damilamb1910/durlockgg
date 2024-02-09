@@ -1,5 +1,7 @@
 .slide img{
     width: 100%;
+    filter: drop-shadow(2px 2px 5px white);
+    padding-bottom: 15px;
 }
 
 .slider .slide-track{
@@ -23,7 +25,7 @@
     margin: auto;
     width: 80vw;
     overflow: hidden;
-    background-color: white;
+    background-color: transparent;
 }
 
 @keyframes scroll {

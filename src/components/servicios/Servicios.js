@@ -6,7 +6,7 @@ import './servicios.css'
 
 const Servicios = () => {
   return (
-    <div className='servicios__container'>
+    <div id="servicios" className='servicios__container'>
       <h3>Servicios</h3>
       <div className='servicios__card__container'>
         <div className='servicios__card'>

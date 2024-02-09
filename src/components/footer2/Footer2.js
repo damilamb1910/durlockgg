@@ -26,7 +26,7 @@ const Footer2 = () => {
         referrerPolicy="no-referrer-when-downgrade"
       ></iframe>
 </div>
-<div className='formulario__container'>
+<div id='contacto' className='formulario__container'>
     <h4>¡Contactanos!</h4>
     <hr />
     

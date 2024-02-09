@@ -20,6 +20,7 @@ h1{
     align-items: center;
 }
 .nosotros{
+    padding-top: 115px;
     height: 420px;
     display: flex;
     flex-direction: column;
@@ -96,6 +97,9 @@ h1{
         padding-right: 5vw;
         text-shadow: 1px 1px 8px black;
         font-size: 20px;
+    }
+    .nosotros {
+        height: 600px;
     }
     
 }

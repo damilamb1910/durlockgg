@@ -21,6 +21,9 @@
 .equipo h3{
     color: white;
     margin-top: 4vw;
+    border-bottom: 5px solid;
+    font-size: 40px;
+    padding-bottom: 20px;
 }
 
 .equipo__card__container{
@@ -30,4 +33,11 @@
     margin-top: 4vw;
     margin-bottom: 4vh;
     flex-wrap: wrap;
+}
+
+@media only screen and  (max-width:600px) {
+    .equipo__card img{
+        width: 350px;
+        
+    }
 }
