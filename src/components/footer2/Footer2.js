@@ -10,7 +10,7 @@ const Footer2 = () => {
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
-  const client="damilamb1910@gmail.com"
+  const client="contacto@durlockgg.com"
 
   const baseUrl = "https://enviaremailserver.onrender.com";
 
