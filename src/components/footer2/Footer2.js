@@ -1,10 +1,56 @@
 import React from 'react'
 import './footer2.css'
+import { useState } from "react";
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Swal from 'sweetalert2'
 
 const Footer2 = () => {
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+  const client="damilamb1910@gmail.com"
+
+  const baseUrl = "https://enviaremailserver.onrender.com";
+
+  const sendEmail = async () => {
+    try{
+      let dataSend = {
+        email: email,
+        subject: subject,
+        message: message,
+        client:client,
+      };
+  
+      const res = await fetch(`${baseUrl}/email/sendEmail`, {
+        method: "POST",
+        body: JSON.stringify(dataSend),
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+      })
+      if(res.ok){
+        console.log("send succesfuly")
+        
+      }else{
+        throw new Error("failed to send email")    
+      }
+    }catch (error){
+      console.error("Eeror enviando email:",error)
+    }
+    
+    };
+    const funcion=(e)=>{
+      sendEmail()
+      Swal.fire({
+        title: "¡Gracias!",
+        text: "Su mensaje fue enviado con exito.",
+        icon: "success"
+      });
+      e.preventDefault()
+    }
     
         const mapStyle = {
           width: '100%',
@@ -33,18 +79,18 @@ const Footer2 = () => {
 <Form > 
 <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Nombre</Form.Label>
-        <Form.Control name='name' type="text" placeholder="Escriba aquí su nombre..." />
+        <Form.Control onChange={(e) => setSubject(e.target.value)} name='name' type="text" placeholder="Escriba aquí su nombre..." />
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Email</Form.Label>
-        <Form.Control name='email' type="email" placeholder="Escriba aquí su email..." />
+        <Form.Control onChange={(e) => setEmail(e.target.value)} id="email" name='email' type="email" placeholder="Escriba aquí su email..." />
       </Form.Group>
       <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1" >
         <Form.Label>Mensaje</Form.Label>
-        <Form.Control name='mensaje' as="textarea" rows={3} placeholder="Escriba aquí su mensaje..." />
+        <Form.Control onChange={(e) => setMessage(e.target.value)} name='mensaje' as="textarea" rows={3} placeholder="Escriba aquí su mensaje..." />
       </Form.Group>
-      <Button variant="primary" type="submit">
+      <Button onClick={(e) => funcion(e)}  variant="primary" type="submit">
         Enviar
       </Button>
     </Form>
@@ -107,7 +153,7 @@ const Footer2 = () => {
 
 </div>
 
-        <h4>Hecho por mi. © 2023</h4>
+        <h6><span onClick={()=>{window.open("https://www.instagram.com/newthink.mk?igsh=MTBpZmpuNmZpcDZ0cQ%3D%3D&utm_source=qr")}} className='name__marketing'>Newthink Marketing</span> © 2023</h6>
 
 
     </footer>
